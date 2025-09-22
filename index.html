@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bresenham</title>
+</head>
+
+<body>
+    <h2>Algoritmos de Bresenham</h2>
+
+    <label for="algoritmo">Selecciona algoritmo:</label>
+    <select id="algoritmo" onchange="renderInputs()">
+        <option value="">-- Selecciona --</option>
+        <option value="recta">Recta</option>
+        <option value="circulo">Círculo</option>
+    </select>
+
+    <div id="inputs"></div>
+    <div id="botonCalcular"></div>
+
+    <h3>Resultados</h3>
+    <div id="resultado"></div>
+
+    <h3>Gráfico</h3>
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <script src="public/scripts/calculo.js"></script>
+</body>
+
+</html>
