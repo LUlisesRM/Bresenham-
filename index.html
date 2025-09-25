@@ -4,29 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/styles/styles.css">
     <title>Bresenham</title>
 </head>
 
 <body>
-    <h2>Algoritmos de Bresenham - Ulises</h2>
+  <header>
+    Algoritmos de Bresenham
+  </header>
 
-    <label for="algoritmo">Selecciona algoritmo:</label>
-    <select id="algoritmo" onchange="renderInputs()">
+  <main>
+    <div class="content">
+      <label for="algoritmo">Selecciona el algoritmo:</label>
+      <select id="algoritmo" onchange="renderInputs()">
         <option value="">-- Selecciona --</option>
         <option value="recta">Recta</option>
         <option value="circulo">Círculo</option>
-    </select>
+      </select>
 
-    <div id="inputs"></div>
-    <div id="botonCalcular"></div>
+      <div id="inputs"></div>
+      <div id="botonCalcular"></div>
 
-    <h3>Resultados</h3>
-    <div id="resultado"></div>
+      <h3>Resultados</h3>
+      <span id="resultado" class="resultados"></span>
 
-    <h3>Gráfico</h3>
-    <canvas id="canvas" width="400" height="400"></canvas>
+      <h3>Gráfico</h3>
+      <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+  </main>
 
-    <script src="public/scripts/calculo.js"></script>
+  <footer>
+    By Juarez López Gerson Neftaly · Vargas Alcántar Noé · Reyes Milan Luis Ulises
+  </footer>
+
+  <script src="public/scripts/calculo.js"></script>
 </body>
 
 </html>
