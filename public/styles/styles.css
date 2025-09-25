@@ -38,7 +38,7 @@
     }
 
     .resultados {
-        
+        display: flex;
     }
 
     label,
